@@ -1,0 +1,19 @@
+{
+  "BUILDPRODUCTS": {
+    "BIN": {
+      "Standalone": {
+        "FILES": "Standalone.cpp",
+        "TYPE": "bin",
+        "USE": [
+          "boost",
+          "boost_program_options",
+          "FWCore/MessageLogger",
+          "FWCore/ParameterSetReader",
+          "FWCore/PluginManager",
+          "FWCore/ServiceRegistry",
+          "FWCore/Utilities"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,2 @@
+ALL_PACKAGES += FWCore/MessageLogger
+subdirs_src_FWCore_MessageLogger := src_FWCore_MessageLogger_python src_FWCore_MessageLogger_scripts src_FWCore_MessageLogger_src

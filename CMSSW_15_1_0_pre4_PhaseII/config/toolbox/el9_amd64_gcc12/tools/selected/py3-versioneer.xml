@@ -1,0 +1,6 @@
+<tool name="py3-versioneer" version="0.29-286d4f3173c587c7bccf98dcc5d84086" revision="1">
+  <client>
+    <environment name="PY3_VERSIONEER_BASE" default="/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-versioneer/0.29-286d4f3173c587c7bccf98dcc5d84086"/>
+  </client>
+  <runtime name="PATH" value="$PY3_VERSIONEER_BASE/bin" type="path"/>
+</tool>

@@ -1,0 +1,14 @@
+{
+  "PY3_FONTTOOLS_BASE": "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-fonttools/4.58.3-7e3d4c17ee3658719097b7ea2ca28bad",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-fonttools/4.58.3-7e3d4c17ee3658719097b7ea2ca28bad/bin"
+    ]
+  },
+  "TOOLNAME": "py3-fonttools",
+  "TOOLREVISION": "1",
+  "TOOLVERSION": "4.58.3-7e3d4c17ee3658719097b7ea2ca28bad",
+  "VARIABLES": [
+    "PY3_FONTTOOLS_BASE"
+  ]
+}

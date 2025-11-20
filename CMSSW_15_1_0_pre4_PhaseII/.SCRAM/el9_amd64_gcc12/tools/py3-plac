@@ -1,0 +1,14 @@
+{
+  "PY3_PLAC_BASE": "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-plac/1.4.5-bb6776752844f8fe1169926a072f2c7e",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-plac/1.4.5-bb6776752844f8fe1169926a072f2c7e/bin"
+    ]
+  },
+  "TOOLNAME": "py3-plac",
+  "TOOLREVISION": "1",
+  "TOOLVERSION": "1.4.5-bb6776752844f8fe1169926a072f2c7e",
+  "VARIABLES": [
+    "PY3_PLAC_BASE"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "BUILDPRODUCTS": {
+    "LIBRARY": {
+      "L1TriggerL1TMuonPlugins": {
+        "FILES": "*.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/Framework",
+          "FWCore/ParameterSet",
+          "FWCore/Utilities",
+          "L1Trigger/L1TMuon",
+          "L1Trigger/L1TCommon",
+          "DataFormats/L1Trigger",
+          "CondFormats/L1TObjects",
+          "CondFormats/DataRecord"
+        ]
+      }
+    }
+  }
+}

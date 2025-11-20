@@ -1,0 +1,2 @@
+ALL_PACKAGES += DataFormats/L1TMuonPhase2
+subdirs_src_DataFormats_L1TMuonPhase2 := src_DataFormats_L1TMuonPhase2_src

@@ -1,0 +1,23 @@
+{
+  "GBL_BASE": "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/gbl/V03-01-01-6181c7f93599f88cd3c93d31b75b3233",
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/gbl/V03-01-01-6181c7f93599f88cd3c93d31b75b3233/include"
+  ],
+  "LIB": [
+    "GBL"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/gbl/V03-01-01-6181c7f93599f88cd3c93d31b75b3233/lib"
+  ],
+  "TOOLNAME": "gbl",
+  "TOOLREVISION": "1",
+  "TOOLVERSION": "V03-01-01-6181c7f93599f88cd3c93d31b75b3233",
+  "USE": [
+    "eigen"
+  ],
+  "VARIABLES": [
+    "GBL_BASE",
+    "LIBDIR",
+    "INCLUDE"
+  ]
+}

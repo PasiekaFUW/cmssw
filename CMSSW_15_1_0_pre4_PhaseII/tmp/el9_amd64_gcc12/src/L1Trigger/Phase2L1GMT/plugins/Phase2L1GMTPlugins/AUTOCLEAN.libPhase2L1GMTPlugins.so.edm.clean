@@ -1,0 +1,2 @@
+01:/usr/bin/rm -f lib/el9_amd64_gcc12/pluginPhase2L1GMTPlugins.so lib/el9_amd64_gcc12/Phase2L1GMTPlugins.edmplugin
+90:edmPluginRefresh lib/el9_amd64_gcc12

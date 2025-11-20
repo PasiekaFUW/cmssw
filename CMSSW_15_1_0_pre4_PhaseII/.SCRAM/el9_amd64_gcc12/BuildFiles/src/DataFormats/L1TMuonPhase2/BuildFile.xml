@@ -1,0 +1,17 @@
+{
+  "EXPORT": {
+    "LIB": [
+      "1"
+    ]
+  },
+  "NAME": "DataFormatsL1TMuonPhase2",
+  "USE": [
+    "DataFormats/CLHEP",
+    "DataFormats/Common",
+    "DataFormats/L1Trigger",
+    "DataFormats/L1TMuon",
+    "DataFormats/L1TrackTrigger",
+    "hls",
+    "rootrflx"
+  ]
+}

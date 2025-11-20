@@ -1,0 +1,36 @@
+{
+  "EXPORT": {
+    "LIB": [
+      "1"
+    ],
+    "USE": [
+      "DataFormats/L1TMuon",
+      "DataFormats/L1TMuon",
+      "Geometry/Records",
+      "Geometry/DTGeometry",
+      "Geometry/CSCGeometry",
+      "Geometry/RPCGeometry",
+      "root",
+      "xerces-c"
+    ]
+  },
+  "LIB": [
+    "boost_timer"
+  ],
+  "NAME": "L1TriggerL1TMuonOverlapPhase2",
+  "USE": [
+    "xerces-c",
+    "root",
+    "roofit",
+    "PhysicsTools/TensorFlow",
+    "DataFormats/L1TMuon",
+    "Geometry/Records",
+    "Geometry/DTGeometry",
+    "Geometry/CSCGeometry",
+    "Geometry/RPCGeometry",
+    "L1Trigger/DTUtilities",
+    "L1Trigger/L1TMuonOverlapPhase1",
+    "PhysicsTools/UtilAlgos",
+    "FWCore/ServiceRegistry"
+  ]
+}

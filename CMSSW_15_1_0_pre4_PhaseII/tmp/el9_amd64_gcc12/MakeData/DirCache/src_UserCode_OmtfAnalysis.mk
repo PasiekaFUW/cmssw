@@ -1,0 +1,2 @@
+ALL_PACKAGES += UserCode/OmtfAnalysis
+subdirs_src_UserCode_OmtfAnalysis := src_UserCode_OmtfAnalysis_python src_UserCode_OmtfAnalysis_plugins src_UserCode_OmtfAnalysis_test src_UserCode_OmtfAnalysis_src

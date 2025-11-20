@@ -1,0 +1,2 @@
+ALL_PACKAGES += FWCore/MessageService
+subdirs_src_FWCore_MessageService := src_FWCore_MessageService_python src_FWCore_MessageService_bin src_FWCore_MessageService_plugins src_FWCore_MessageService_test src_FWCore_MessageService_src

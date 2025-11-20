@@ -1,0 +1,2 @@
+ALL_PACKAGES += L1Trigger/Phase2L1GMT
+subdirs_src_L1Trigger_Phase2L1GMT := src_L1Trigger_Phase2L1GMT_python src_L1Trigger_Phase2L1GMT_plugins src_L1Trigger_Phase2L1GMT_test src_L1Trigger_Phase2L1GMT_src

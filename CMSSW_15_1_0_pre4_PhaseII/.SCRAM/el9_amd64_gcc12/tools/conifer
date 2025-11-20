@@ -1,0 +1,16 @@
+{
+  "CONIFER_BASE": "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/conifer/1.7-534f25fc4bc9f0613c4a06112877d465",
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/conifer/1.7-534f25fc4bc9f0613c4a06112877d465/include"
+  ],
+  "TOOLNAME": "conifer",
+  "TOOLREVISION": "1",
+  "TOOLVERSION": "1.7-534f25fc4bc9f0613c4a06112877d465",
+  "USE": [
+    "json"
+  ],
+  "VARIABLES": [
+    "CONIFER_BASE",
+    "INCLUDE"
+  ]
+}

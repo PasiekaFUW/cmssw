@@ -1,0 +1,44 @@
+{
+  "EXPORT": {
+    "LIB": [
+      "1"
+    ]
+  },
+  "NAME": "UserCodeOmtfAnalysis",
+  "USE": [
+    "root",
+    "FWCore/Framework",
+    "DataFormats/L1Trigger",
+    "DataFormats/RPCDigi",
+    "DataFormats/CSCDigi",
+    "DataFormats/L1CSCTrackFinder",
+    "DataFormats/FEDRawData",
+    "DataFormats/L1GlobalMuonTrigger",
+    "DataFormats/L1GlobalTrigger",
+    "DataFormats/MuonReco",
+    "DataFormats/TrackReco",
+    "CondFormats/L1TObjects",
+    "CondFormats/RPCObjects",
+    "L1Trigger/CSCTrackFinder",
+    "L1Trigger/RPCTrigger",
+    "L1Trigger/L1TMuonOverlap",
+    "HLTrigger/HLTcore",
+    "DQMServices/Core",
+    "Geometry/RPCGeometry",
+    "Geometry/CommonDetUnit",
+    "Geometry/Records",
+    "EventFilter/RPCRawToDigi",
+    "EventFilter/L1TRawToDigi",
+    "CommonTools/UtilAlgos",
+    "PhysicsTools/UtilAlgos",
+    "TrackingTools/Records",
+    "TrackingTools/TrajectoryState",
+    "TrackingTools/GeomPropagators",
+    "TrackingTools/PatternTools",
+    "SimTracker/TrackerHitAssociation",
+    "SimDataFormats/TrackerDigiSimLink",
+    "FWCore/PluginManager",
+    "UserCode/OmtfDataFormats",
+    "xerces-c"
+  ]
+}

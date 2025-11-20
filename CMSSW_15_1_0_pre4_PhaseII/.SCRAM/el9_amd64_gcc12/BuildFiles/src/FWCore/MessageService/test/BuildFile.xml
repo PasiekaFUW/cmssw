@@ -1,0 +1,686 @@
+{
+  "BUILDPRODUCTS": {
+    "BIN": {
+      "TestFWCoreMessageServiceJobReport": {
+        "COMMAND": "testJobReport.sh",
+        "TYPE": "test"
+      },
+      "fmt_test.cppunit": {
+        "FILES": "fmt_test.cppunit.cpp",
+        "TYPE": "bin",
+        "USE": [
+          "fmt",
+          "cppunit"
+        ]
+      },
+      "makeJobReport": {
+        "FILES": "makeJobReport.cpp",
+        "TYPE": "bin",
+        "USE": [
+          "boost_program_options",
+          "FWCore/Framework",
+          "FWCore/MessageLogger"
+        ]
+      },
+      "standAloneWithMessageLogger": {
+        "FILES": "standAloneTest.cpp",
+        "FLAGS": {
+          "NO_TESTRUN": [
+            "1"
+          ]
+        },
+        "TYPE": "bin",
+        "USE": [
+          "FWCore/MessageLogger"
+        ]
+      },
+      "standAloneWithMessageLoggerRunner": {
+        "COMMAND": "standAlone_1.sh",
+        "FLAGS": {
+          "PRE_TEST": [
+            "standAloneWithMessageLogger"
+          ]
+        },
+        "TYPE": "test"
+      },
+      "testLoggerInCmsRun": {
+        "COMMAND": "testLoggerInCmsRun.sh",
+        "TYPE": "test"
+      },
+      "trivial_main": {
+        "FILES": "trivial_main.cpp",
+        "TYPE": "bin",
+        "USE": [
+          "FWCore/MessageLogger"
+        ]
+      },
+      "unitTestsGroup_1_u1": {
+        "COMMAND": "u1.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_1_u2": {
+        "COMMAND": "u2.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_1_u21": {
+        "COMMAND": "u21.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_1_u6": {
+        "COMMAND": "u6.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_2_u12": {
+        "COMMAND": "u12.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_2_u13": {
+        "COMMAND": "u13.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_2_u14": {
+        "COMMAND": "u14.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_2_u15": {
+        "COMMAND": "u15.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_2_u9": {
+        "COMMAND": "u9.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_3_u10": {
+        "COMMAND": "u10.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_3_u17": {
+        "COMMAND": "u17.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_3_u34": {
+        "COMMAND": "u34.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_3_u35": {
+        "COMMAND": "u35.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_4_u18": {
+        "COMMAND": "u18.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_4_u19": {
+        "COMMAND": "u19.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_4_u20": {
+        "COMMAND": "u20.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_5_u22": {
+        "COMMAND": "u22.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_5_u24": {
+        "COMMAND": "u24.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_5_u25": {
+        "COMMAND": "u25.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_6_u23": {
+        "COMMAND": "u23.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_6_u27": {
+        "COMMAND": "u27.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_6_u30": {
+        "COMMAND": "u30.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_6_u31": {
+        "COMMAND": "u31.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_6_u33": {
+        "COMMAND": "u33.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_d_u13d": {
+        "COMMAND": "u13d.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_d_u16": {
+        "COMMAND": "u16.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_d_u19d": {
+        "COMMAND": "u19d.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_d_u1d": {
+        "COMMAND": "u1d.sh",
+        "TYPE": "test"
+      },
+      "unitTestsGroup_d_u33d": {
+        "COMMAND": "u33d.sh",
+        "TYPE": "test"
+      },
+      "unitTestsLimits_u11": {
+        "COMMAND": "u11.sh",
+        "TYPE": "test"
+      },
+      "unitTestsLimits_u36": {
+        "COMMAND": "u36.sh",
+        "TYPE": "test"
+      },
+      "unitTestsLimits_u7": {
+        "COMMAND": "u7.sh",
+        "TYPE": "test"
+      },
+      "unitTestsLimits_u8": {
+        "COMMAND": "u8.sh",
+        "TYPE": "test"
+      },
+      "unitTestsStatistics_u28": {
+        "COMMAND": "u28.sh",
+        "TYPE": "test"
+      },
+      "unitTestsStatistics_u3": {
+        "COMMAND": "u3.sh",
+        "TYPE": "test"
+      },
+      "unitTestsStatistics_u4": {
+        "COMMAND": "u4.sh",
+        "TYPE": "test"
+      },
+      "unitTestsStatistics_u5": {
+        "COMMAND": "u5.sh",
+        "TYPE": "test"
+      }
+    },
+    "LIBRARY": {
+      "MLPrintProcessInformation": {
+        "FILES": "PrintProcessInformation.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "DataFormats/Provenance",
+          "FWCore/Framework",
+          "FWCore/MessageLogger",
+          "FWCore/ServiceRegistry"
+        ]
+      },
+      "MLexampleModule_1": {
+        "FILES": "MLexampleModule_1.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "MemoryTestClient_A": {
+        "FILES": "MemoryTestClient_A.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "MessageLoggerClient": {
+        "FILES": "MessageLoggerClient.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "PSetTestClient_A": {
+        "FILES": "PSetTestClient_A.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "ProblemTestClient_t1": {
+        "FILES": "ProblemTestClient_t1.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_A": {
+        "FILES": "UnitTestClient_A.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_Ad": {
+        "FILES": "UnitTestClient_Ad.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_B": {
+        "FILES": "UnitTestClient_B.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_C": {
+        "FILES": "UnitTestClient_C.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_D": {
+        "FILES": "UnitTestClient_D.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_E": {
+        "FILES": "UnitTestClient_E.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_F": {
+        "FILES": "UnitTestClient_F.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_G": {
+        "FILES": "UnitTestClient_G.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_H": {
+        "FILES": "UnitTestClient_H.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_Hd": {
+        "FILES": "UnitTestClient_Hd.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_I": {
+        "FILES": "UnitTestClient_I.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_J": {
+        "FILES": "UnitTestClient_J.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_K": {
+        "FILES": "UnitTestClient_K.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_M": {
+        "FILES": "UnitTestClient_M.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_N": {
+        "FILES": "UnitTestClient_N.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_Nd": {
+        "FILES": "UnitTestClient_Nd.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_O": {
+        "FILES": "UnitTestClient_O.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_P": {
+        "FILES": "UnitTestClient_P.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_Q": {
+        "FILES": "UnitTestClient_Q.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_R": {
+        "FILES": "UnitTestClient_R.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_S": {
+        "FILES": "UnitTestClient_S.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_SLumi": {
+        "FILES": "UnitTestClient_SLumi.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_T": {
+        "FILES": "UnitTestClient_T.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_V": {
+        "FILES": "UnitTestClient_V.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_Vd": {
+        "FILES": "UnitTestClient_Vd.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_W": {
+        "FILES": "UnitTestClient_W.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestClient_X": {
+        "FILES": "UnitTestClient_X.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework"
+        ]
+      },
+      "UnitTestService_H": {
+        "FILES": "UnitTestService_H.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/ParameterSet",
+          "FWCore/ServiceRegistry"
+        ]
+      },
+      "UnitTestService_Hd": {
+        "FILES": "UnitTestService_Hd.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/ParameterSet",
+          "FWCore/ServiceRegistry"
+        ]
+      },
+      "makeSignals": {
+        "FILES": "makeSignals.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "FWCore/MessageLogger",
+          "FWCore/Framework",
+          "rootcore"
+        ]
+      }
+    }
+  },
+  "USE": [
+    "boost",
+    "FWCore/Utilities"
+  ]
+}

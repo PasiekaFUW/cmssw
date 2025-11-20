@@ -1,0 +1,3 @@
+ALL_SUBSYSTEMS+=L1Trigger
+subdirs_src_L1Trigger = src_L1Trigger_L1TMuonOverlapPhase1 src_L1Trigger_L1TMuonOverlapPhase2 src_L1Trigger_Phase2L1GMT src_L1Trigger_L1TMuon
+subdirs_src += src_L1Trigger

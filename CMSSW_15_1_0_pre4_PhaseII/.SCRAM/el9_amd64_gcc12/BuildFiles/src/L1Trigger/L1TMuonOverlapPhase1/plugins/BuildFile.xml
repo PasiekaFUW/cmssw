@@ -1,0 +1,30 @@
+{
+  "BUILDPRODUCTS": {
+    "LIBRARY": {
+      "L1TriggerL1TMuonOverlapPhase1Plugins": {
+        "FILES": "*.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ],
+          "LDFLAGS": [
+            "-lXMLIO"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "L1Trigger/L1TMuonOverlapPhase1",
+          "CondFormats/L1TObjects",
+          "CondFormats/DataRecord",
+          "FWCore/ServiceRegistry",
+          "CondCore/DBOutputService",
+          "SimDataFormats/Track",
+          "SimDataFormats/Vertex",
+          "root",
+          "clhep",
+          "hepmc"
+        ]
+      }
+    }
+  }
+}

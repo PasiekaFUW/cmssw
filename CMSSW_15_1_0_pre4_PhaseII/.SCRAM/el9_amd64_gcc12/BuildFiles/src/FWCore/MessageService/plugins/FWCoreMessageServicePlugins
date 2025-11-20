@@ -1,0 +1,1 @@
+FWCoreMessageServicePlugins_PACKAGE := self/src/FWCore/MessageService/plugins

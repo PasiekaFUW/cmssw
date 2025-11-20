@@ -1,0 +1,14 @@
+{
+  "PY3_RSA_BASE": "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-rsa/4.9.1-edc38cd98f583b72914fdabb3f170f01",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-rsa/4.9.1-edc38cd98f583b72914fdabb3f170f01/bin"
+    ]
+  },
+  "TOOLNAME": "py3-rsa",
+  "TOOLREVISION": "1",
+  "TOOLVERSION": "4.9.1-edc38cd98f583b72914fdabb3f170f01",
+  "VARIABLES": [
+    "PY3_RSA_BASE"
+  ]
+}

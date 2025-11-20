@@ -1,0 +1,6 @@
+<tool name="roottmva" version="6.32.13-42c70d2d1e9c3e3060272fb12c5546fb" revision="1">
+  <info url="http://root.cern.ch/root/"/>
+  <lib name="TMVA"/>
+  <use name="rootmlp"/>
+  <use name="rootminuit"/>
+</tool>

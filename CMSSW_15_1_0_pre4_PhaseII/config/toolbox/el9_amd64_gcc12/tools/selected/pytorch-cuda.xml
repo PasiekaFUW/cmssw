@@ -1,0 +1,6 @@
+<tool name="pytorch-cuda" version="2.6.0-a6e0288f69a23564d1c838e1d6ce5da6" revision="1">
+  <lib name="torch_cuda"/>
+  <lib name="c10_cuda"/>
+  <use name="cuda"/>
+  <use name="torch-interface"/>
+</tool>

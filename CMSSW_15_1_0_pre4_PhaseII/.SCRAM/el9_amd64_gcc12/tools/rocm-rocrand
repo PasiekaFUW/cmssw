@@ -1,0 +1,12 @@
+{
+  "LIB": [
+    "hiprand",
+    "rocrand"
+  ],
+  "TOOLNAME": "rocm-rocrand",
+  "TOOLREVISION": "1",
+  "TOOLVERSION": "6.3.2-50d6dc3fe678a83aa118a73be1aa4ffe",
+  "USE": [
+    "rocm"
+  ]
+}

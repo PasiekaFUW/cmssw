@@ -1,0 +1,6 @@
+<tool name="py3-cython" version="3.1.2-9d3109110c7a888c0a144c9f1ee69f2b" revision="1">
+  <client>
+    <environment name="PY3_CYTHON_BASE" default="/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-cython/3.1.2-9d3109110c7a888c0a144c9f1ee69f2b"/>
+  </client>
+  <runtime name="PATH" value="$PY3_CYTHON_BASE/bin" type="path"/>
+</tool>

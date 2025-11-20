@@ -1,0 +1,14 @@
+{
+  "EXPORT": {
+    "LIB": [
+      "1"
+    ]
+  },
+  "NAME": "FWCoreMessageService",
+  "USE": [
+    "FWCore/MessageLogger",
+    "FWCore/ParameterSet",
+    "FWCore/Utilities",
+    "tbb"
+  ]
+}

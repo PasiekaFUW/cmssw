@@ -1,0 +1,9 @@
+{
+  "TOOLNAME": "gbl_x86-64-v2",
+  "TOOLREVISION": "1",
+  "TOOLVERSION": "V03-01-01-6d3dadc82bb59c50aaeb8c22da877e9a",
+  "VARIABLES": [
+    "X86_64_V2_LIBDIR"
+  ],
+  "X86_64_V2_LIBDIR": "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/gbl_x86-64-v2/V03-01-01-6d3dadc82bb59c50aaeb8c22da877e9a/lib"
+}

@@ -1,0 +1,5 @@
+<tool name="rocm-rccl" version="6.3.2-50d6dc3fe678a83aa118a73be1aa4ffe" revision="1">
+  <info url="https://rocm.docs.amd.com/projects/rccl/en/docs-6.3.2-50d6dc3fe678a83aa118a73be1aa4ffe/"/>
+  <use name="rocm"/>
+  <lib name="rccl"/>
+</tool>

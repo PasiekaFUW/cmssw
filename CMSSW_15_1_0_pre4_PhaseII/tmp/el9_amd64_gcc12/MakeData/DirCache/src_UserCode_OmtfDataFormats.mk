@@ -1,0 +1,2 @@
+ALL_PACKAGES += UserCode/OmtfDataFormats
+subdirs_src_UserCode_OmtfDataFormats := src_UserCode_OmtfDataFormats_src

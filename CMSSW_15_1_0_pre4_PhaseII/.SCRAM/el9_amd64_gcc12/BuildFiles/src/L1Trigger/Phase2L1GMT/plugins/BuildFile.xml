@@ -1,0 +1,27 @@
+{
+  "BUILDPRODUCTS": {
+    "LIBRARY": {
+      "Phase2L1GMTPlugins": {
+        "FILES": "*.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ],
+          "REM_CXXFLAGS": [
+            "-fsanitize=undefined"
+          ]
+        },
+        "TYPE": "lib",
+        "USE": [
+          "DataFormats/L1TMuonPhase2",
+          "DataFormats/L1TMuon",
+          "DataFormats/L1Trigger",
+          "L1Trigger/Phase2L1GMT",
+          "hepmc",
+          "hls",
+          "root"
+        ]
+      }
+    }
+  }
+}

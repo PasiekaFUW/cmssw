@@ -1,0 +1,14 @@
+{
+  "PY3_PYCODESTYLE_BASE": "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-pycodestyle/2.13.0-2b153c60fe0ff27076bb7ff5fc3e64f3",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-pycodestyle/2.13.0-2b153c60fe0ff27076bb7ff5fc3e64f3/bin"
+    ]
+  },
+  "TOOLNAME": "py3-pycodestyle",
+  "TOOLREVISION": "1",
+  "TOOLVERSION": "2.13.0-2b153c60fe0ff27076bb7ff5fc3e64f3",
+  "VARIABLES": [
+    "PY3_PYCODESTYLE_BASE"
+  ]
+}

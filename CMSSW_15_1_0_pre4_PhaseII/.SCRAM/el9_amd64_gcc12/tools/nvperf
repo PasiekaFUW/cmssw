@@ -1,0 +1,12 @@
+{
+  "LIB": [
+    "nvperf_host",
+    "nvperf_target"
+  ],
+  "TOOLNAME": "nvperf",
+  "TOOLREVISION": "2",
+  "TOOLVERSION": "12.9.0-fa6c0b245a8855bd8804304f69e78056",
+  "USE": [
+    "cuda-interface"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "EXPORT": {
+    "LIB": [
+      "1"
+    ]
+  },
+  "NAME": "L1TriggerPhase2L1GMT",
+  "USE": [
+    "FWCore/ParameterSet",
+    "DataFormats/L1TMuonPhase2",
+    "DataFormats/L1TMuon",
+    "DataFormats/L1Trigger",
+    "L1Trigger/L1TMuon",
+    "L1Trigger/L1TTwinMux",
+    "L1Trigger/L1TMuonEndCapPhase2",
+    "hls",
+    "hepmc",
+    "SimTracker/TrackTriggerAssociation",
+    "FWCore/ServiceRegistry",
+    "CommonTools/UtilAlgos"
+  ]
+}

@@ -1,0 +1,6 @@
+<tool name="opencv_x86-64-v2" version="4.9.0-8102fbc5a7b9f0fcd05b85f1a54342a1" revision="1">
+  <client>
+    <environment name="X86_64_V2_LIBDIR" default="/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/opencv_x86-64-v2/4.9.0-8102fbc5a7b9f0fcd05b85f1a54342a1/lib"/>
+    <environment name="X86_64_V2_BINDIR" default="/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/opencv_x86-64-v2/4.9.0-8102fbc5a7b9f0fcd05b85f1a54342a1/bin"/>
+  </client>
+</tool>

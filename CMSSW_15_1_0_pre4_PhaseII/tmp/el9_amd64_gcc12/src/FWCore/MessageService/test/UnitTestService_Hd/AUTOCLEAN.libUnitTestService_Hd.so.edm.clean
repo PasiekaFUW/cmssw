@@ -1,0 +1,2 @@
+01:/usr/bin/rm -f lib/el9_amd64_gcc12/pluginUnitTestService_Hd.so lib/el9_amd64_gcc12/UnitTestService_Hd.edmplugin
+90:edmPluginRefresh lib/el9_amd64_gcc12

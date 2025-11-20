@@ -1,0 +1,50 @@
+{
+  "EXPORT": {
+    "LIB": [
+      "1"
+    ],
+    "USE": [
+      "DataFormats/L1TMuon",
+      "L1Trigger/RPCTrigger",
+      "DataFormats/L1TMuon",
+      "Geometry/Records",
+      "Geometry/DTGeometry",
+      "Geometry/CSCGeometry",
+      "Geometry/RPCGeometry",
+      "root",
+      "xerces-c",
+      "Utilities/Xerces"
+    ]
+  },
+  "FLAGS": {
+    "ADD_SUBDIR": [
+      "1"
+    ]
+  },
+  "LIB": [
+    "boost_timer"
+  ],
+  "NAME": "L1TriggerL1TMuonOverlapPhase1",
+  "USE": [
+    "CommonTools/UtilAlgos",
+    "DataFormats/L1DTTrackFinder",
+    "DataFormats/L1TMuon",
+    "FWCore/ServiceRegistry",
+    "Geometry/CSCGeometry",
+    "Geometry/DTGeometry",
+    "Geometry/RPCGeometry",
+    "Geometry/Records",
+    "L1Trigger/DTUtilities",
+    "L1Trigger/L1TMuon",
+    "L1Trigger/RPCTrigger",
+    "SimDataFormats/DigiSimLinks",
+    "SimDataFormats/TrackingAnalysis",
+    "TrackPropagation/SteppingHelixPropagator",
+    "TrackingTools/Records",
+    "TrackingTools/TrajectoryParametrization",
+    "roofit",
+    "root",
+    "xerces-c",
+    "Utilities/Xerces"
+  ]
+}

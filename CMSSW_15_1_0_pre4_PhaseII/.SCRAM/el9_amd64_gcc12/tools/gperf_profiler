@@ -1,0 +1,11 @@
+{
+  "LIB": [
+    "profiler"
+  ],
+  "TOOLNAME": "gperf_profiler",
+  "TOOLREVISION": "1",
+  "TOOLVERSION": "2.11-2af2ae7f1f1d5f282945540513ad7dc7",
+  "USE": [
+    "gperf_interface"
+  ]
+}

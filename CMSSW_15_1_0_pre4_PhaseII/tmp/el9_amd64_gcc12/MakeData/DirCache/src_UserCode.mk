@@ -1,0 +1,3 @@
+ALL_SUBSYSTEMS+=UserCode
+subdirs_src_UserCode = src_UserCode_OmtfDataFormats src_UserCode_OmtfAnalysis
+subdirs_src += src_UserCode

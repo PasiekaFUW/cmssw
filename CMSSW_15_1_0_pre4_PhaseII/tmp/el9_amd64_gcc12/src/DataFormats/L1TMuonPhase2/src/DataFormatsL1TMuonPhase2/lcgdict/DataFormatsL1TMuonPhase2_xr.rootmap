@@ -1,0 +1,67 @@
+{ decls }
+namespace edm {  }
+namespace l1t { class MuonStub; }
+namespace edm { namespace refhelper { template <typename C, typename T> class FindUsingAdvance; } }
+namespace edm { template <typename C, typename T, typename F> class Ref; }
+namespace l1t { class SAMuon; }
+namespace l1t { class TrackerMuon; }
+namespace l1t { class KMTFTrack; }
+namespace edm { template <typename T> class Wrapper; }
+namespace std {  }
+namespace l1t {  }
+namespace l1t { namespace phase2 {  } }
+
+[ libDataFormatsL1TMuonPhase2.so ]
+# List of selected classes
+class edm::Ref<l1t::KMTFTrackCollection>
+class edm::Ref<l1t::MuonStubCollection>
+class edm::Ref<l1t::SAMuonCollection>
+class edm::Ref<l1t::TrackerMuonCollection>
+class edm::Ref<vector<l1t::KMTFTrack>,l1t::KMTFTrack,edm::refhelper::FindUsingAdvance<vector<l1t::KMTFTrack>,l1t::KMTFTrack> >
+class edm::Ref<vector<l1t::MuonStub>,l1t::MuonStub,edm::refhelper::FindUsingAdvance<vector<l1t::MuonStub>,l1t::MuonStub> >
+class edm::Ref<vector<l1t::SAMuon>,l1t::SAMuon,edm::refhelper::FindUsingAdvance<vector<l1t::SAMuon>,l1t::SAMuon> >
+class edm::Ref<vector<l1t::TrackerMuon>,l1t::TrackerMuon,edm::refhelper::FindUsingAdvance<vector<l1t::TrackerMuon>,l1t::TrackerMuon> >
+class edm::Wrapper<edm::Ref<l1t::KMTFTrackCollection> >
+class edm::Wrapper<edm::Ref<vector<l1t::KMTFTrack>,l1t::KMTFTrack,edm::refhelper::FindUsingAdvance<vector<l1t::KMTFTrack>,l1t::KMTFTrack> > >
+class edm::Wrapper<l1t::KMTFTrackCollection>
+class edm::Wrapper<l1t::phase2::EMTFHitCollection>
+class edm::Wrapper<l1t::phase2::EMTFInputCollection>
+class edm::Wrapper<l1t::phase2::EMTFTrackCollection>
+class edm::Wrapper<std::vector<l1t::MuonStub> >
+class edm::Wrapper<std::vector<l1t::SAMuon> >
+class edm::Wrapper<std::vector<l1t::TrackerMuon> >
+class edm::Wrapper<vector<l1t::KMTFTrack> >
+class edm::Wrapper<vector<l1t::MuonStub> >
+class edm::Wrapper<vector<l1t::SAMuon> >
+class edm::Wrapper<vector<l1t::TrackerMuon> >
+class edm::Wrapper<vector<l1t::phase2::EMTFHit> >
+class edm::Wrapper<vector<l1t::phase2::EMTFInput> >
+class edm::Wrapper<vector<l1t::phase2::EMTFTrack> >
+class l1t::KMTFTrack
+class l1t::MuonStub
+class l1t::SAMuon
+class l1t::TrackerMuon
+class l1t::phase2::EMTFHit
+class l1t::phase2::EMTFHitCollection
+class l1t::phase2::EMTFInput
+class l1t::phase2::EMTFInputCollection
+class l1t::phase2::EMTFTrack
+class l1t::phase2::EMTFTrackCollection
+class vector<edm::Ref<l1t::TrackerMuonCollection> >
+class vector<edm::Ref<vector<l1t::TrackerMuon>,l1t::TrackerMuon,edm::refhelper::FindUsingAdvance<vector<l1t::TrackerMuon>,l1t::TrackerMuon> > >
+class vector<l1t::KMTFTrack>
+class vector<l1t::MuonStub>
+class vector<l1t::SAMuon>
+class vector<l1t::TrackerMuon>
+class vector<l1t::phase2::EMTFHit>
+class vector<l1t::phase2::EMTFInput>
+class vector<l1t::phase2::EMTFTrack>
+header DataFormats/L1TMuonPhase2/interface/KMTFTrack.h
+header DataFormats/L1TMuonPhase2/interface/MuonStub.h
+header DataFormats/L1TMuonPhase2/interface/SAMuon.h
+header DataFormats/L1TMuonPhase2/interface/TrackerMuon.h
+header DataFormats/L1TMuonPhase2/interface/EMTFHit.h
+header DataFormats/L1TMuonPhase2/interface/EMTFInput.h
+header DataFormats/L1TMuonPhase2/interface/EMTFTrack.h
+# List of selected typedefs and outer classes
+typedef l1t::KMTFTrackCollection

@@ -1,0 +1,4 @@
+<tool name="gperf_tcmalloc_and_profiler" version="2.11-2af2ae7f1f1d5f282945540513ad7dc7" revision="1">
+  <lib name="tcmalloc_and_profiler"/>
+  <use name="gperf_interface"/>
+</tool>

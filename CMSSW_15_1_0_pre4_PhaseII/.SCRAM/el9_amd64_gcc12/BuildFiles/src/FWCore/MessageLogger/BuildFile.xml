@@ -1,0 +1,16 @@
+{
+  "EXPORT": {
+    "LIB": [
+      "1"
+    ]
+  },
+  "NAME": "FWCoreMessageLogger",
+  "USE": [
+    "FWCore/Utilities",
+    "DataFormats/Provenance",
+    "boost",
+    "fmt",
+    "tinyxml2",
+    "tbb"
+  ]
+}

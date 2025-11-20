@@ -1,0 +1,25 @@
+{
+  "GPERF_INTERFACE_BASE": "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/gperftools/2.11-2af2ae7f1f1d5f282945540513ad7dc7",
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/gperftools/2.11-2af2ae7f1f1d5f282945540513ad7dc7/include"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/gperftools/2.11-2af2ae7f1f1d5f282945540513ad7dc7/lib"
+  ],
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/gperftools/2.11-2af2ae7f1f1d5f282945540513ad7dc7/bin"
+    ]
+  },
+  "TOOLNAME": "gperf_interface",
+  "TOOLREVISION": "1",
+  "TOOLVERSION": "2.11-2af2ae7f1f1d5f282945540513ad7dc7",
+  "USE": [
+    "libunwind"
+  ],
+  "VARIABLES": [
+    "GPERF_INTERFACE_BASE",
+    "LIBDIR",
+    "INCLUDE"
+  ]
+}

@@ -1,0 +1,32 @@
+[ libUserCodeOmtfDataFormats.so ]
+# List of selected classes
+class BxStatObj
+class DetBxStatObj
+class DetSpecObj
+class EventData
+class EventObj
+class GenObj
+class GenObjColl
+class L1Obj
+class L1ObjColl
+class MuonObj
+class MuonObjColl
+class SynchroCountsObj
+class SynchroCountsObjVect
+class TrackObj
+class TriggerMenuResultObj
+header UserCode/OmtfDataFormats/interface/BxStatObj.h
+header UserCode/OmtfDataFormats/interface/DetBxStatObj.h
+header UserCode/OmtfDataFormats/interface/DetSpecObj.h
+header UserCode/OmtfDataFormats/interface/EventData.h
+header UserCode/OmtfDataFormats/interface/EventObj.h
+header UserCode/OmtfDataFormats/interface/GenObj.h
+header UserCode/OmtfDataFormats/interface/GenObjColl.h
+header UserCode/OmtfDataFormats/interface/L1Obj.h
+header UserCode/OmtfDataFormats/interface/L1ObjColl.h
+header UserCode/OmtfDataFormats/interface/MuonObj.h
+header UserCode/OmtfDataFormats/interface/MuonObjColl.h
+header UserCode/OmtfDataFormats/interface/SynchroCountsObj.h
+header UserCode/OmtfDataFormats/interface/SynchroCountsObjVect.h
+header UserCode/OmtfDataFormats/interface/TrackObj.h
+header UserCode/OmtfDataFormats/interface/TriggerMenuResultObj.h

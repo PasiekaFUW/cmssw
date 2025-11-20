@@ -1,0 +1,14 @@
+{
+  "PY3_DEBUGPY_BASE": "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-debugpy/1.8.14-6dc12ad9f80977199d2e80b0f9cbfc51",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-debugpy/1.8.14-6dc12ad9f80977199d2e80b0f9cbfc51/bin"
+    ]
+  },
+  "TOOLNAME": "py3-debugpy",
+  "TOOLREVISION": "1",
+  "TOOLVERSION": "1.8.14-6dc12ad9f80977199d2e80b0f9cbfc51",
+  "VARIABLES": [
+    "PY3_DEBUGPY_BASE"
+  ]
+}

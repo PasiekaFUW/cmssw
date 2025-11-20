@@ -1,0 +1,6 @@
+<tool name="py3-trove-classifiers" version="2025.5.9.12-1700dd649599815dee7b4da16bb2cb4e" revision="1">
+  <client>
+    <environment name="PY3_TROVE_CLASSIFIERS_BASE" default="/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-trove-classifiers/2025.5.9.12-1700dd649599815dee7b4da16bb2cb4e"/>
+  </client>
+  <runtime name="PATH" value="$PY3_TROVE_CLASSIFIERS_BASE/bin" type="path"/>
+</tool>

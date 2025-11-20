@@ -1,0 +1,13 @@
+{
+  "EXPORT": {
+    "LIB": [
+      "1"
+    ]
+  },
+  "NAME": "UserCodeOmtfDataFormats",
+  "USE": [
+    "root",
+    "rootrflx",
+    "L1Trigger/L1TMuonOverlap"
+  ]
+}

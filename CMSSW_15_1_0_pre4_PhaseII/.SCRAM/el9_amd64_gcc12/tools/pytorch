@@ -1,0 +1,18 @@
+{
+  "FLAGS": {
+    "FORCE_LINK": [
+      "1"
+    ]
+  },
+  "LIB": [
+    "torch",
+    "torch_cpu",
+    "c10"
+  ],
+  "TOOLNAME": "pytorch",
+  "TOOLREVISION": "2",
+  "TOOLVERSION": "2.6.0-a6e0288f69a23564d1c838e1d6ce5da6",
+  "USE": [
+    "torch-interface"
+  ]
+}

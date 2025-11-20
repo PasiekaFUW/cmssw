@@ -1,0 +1,11 @@
+{
+  "LIB": [
+    "GX11"
+  ],
+  "TOOLNAME": "rootx11",
+  "TOOLREVISION": "1",
+  "TOOLVERSION": "6.32.13-42c70d2d1e9c3e3060272fb12c5546fb",
+  "USE": [
+    "rootcling"
+  ]
+}

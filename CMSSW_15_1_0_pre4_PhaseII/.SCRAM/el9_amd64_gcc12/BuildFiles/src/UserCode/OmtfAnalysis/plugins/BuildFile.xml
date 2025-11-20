@@ -1,0 +1,18 @@
+{
+  "BUILDPRODUCTS": {
+    "LIBRARY": {
+      "UserCodeOmtfAnalysisPlugins": {
+        "FILES": "*.cc",
+        "FLAGS": {
+          "EDM_PLUGIN": [
+            "1"
+          ]
+        },
+        "TYPE": "lib"
+      }
+    }
+  },
+  "USE": [
+    "UserCode/OmtfAnalysis"
+  ]
+}

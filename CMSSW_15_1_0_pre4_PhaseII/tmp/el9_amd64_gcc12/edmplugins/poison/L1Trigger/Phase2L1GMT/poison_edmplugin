@@ -1,0 +1,12 @@
+plugin-poisoned-Phase2L1GMTPlugins.so Phase2L1TGMTFilter CMS%EDM%Framework%Module
+plugin-poisoned-Phase2L1GMTPlugins.so Phase2L1TGMTFilter CMS%EDM%Framework%ParameterSet%Description
+plugin-poisoned-Phase2L1GMTPlugins.so Phase2L1TGMTFwdMuonTranslator CMS%EDM%Framework%Module
+plugin-poisoned-Phase2L1GMTPlugins.so Phase2L1TGMTFwdMuonTranslator CMS%EDM%Framework%ParameterSet%Description
+plugin-poisoned-Phase2L1GMTPlugins.so Phase2L1TGMTKMTFProducer CMS%EDM%Framework%Module
+plugin-poisoned-Phase2L1GMTPlugins.so Phase2L1TGMTKMTFProducer CMS%EDM%Framework%ParameterSet%Description
+plugin-poisoned-Phase2L1GMTPlugins.so Phase2L1TGMTSAMuonGhostCleaner CMS%EDM%Framework%Module
+plugin-poisoned-Phase2L1GMTPlugins.so Phase2L1TGMTSAMuonGhostCleaner CMS%EDM%Framework%ParameterSet%Description
+plugin-poisoned-Phase2L1GMTPlugins.so Phase2L1TGMTStubProducer CMS%EDM%Framework%Module
+plugin-poisoned-Phase2L1GMTPlugins.so Phase2L1TGMTStubProducer CMS%EDM%Framework%ParameterSet%Description
+plugin-poisoned-Phase2L1GMTPlugins.so Phase2L1TGMTTkMuonProducer CMS%EDM%Framework%Module
+plugin-poisoned-Phase2L1GMTPlugins.so Phase2L1TGMTTkMuonProducer CMS%EDM%Framework%ParameterSet%Description

@@ -1,0 +1,8 @@
+<tool name="libfabric" version="2.1.0-7a2e4d1280414b1d5ba3d19837c4594a" revision="1">
+  <lib name="fabric"/>
+  <client>
+    <environment name="LIBFABRIC_BASE" default="/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/libfabric/2.1.0-7a2e4d1280414b1d5ba3d19837c4594a"/>
+    <environment name="LIBDIR"         default="$LIBFABRIC_BASE/lib"/>
+    <environment name="INCLUDE"        default="$LIBFABRIC_BASE/include"/>
+  </client>
+</tool>

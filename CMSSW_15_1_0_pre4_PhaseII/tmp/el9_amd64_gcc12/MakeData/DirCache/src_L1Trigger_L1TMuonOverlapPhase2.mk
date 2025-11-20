@@ -1,0 +1,2 @@
+ALL_PACKAGES += L1Trigger/L1TMuonOverlapPhase2
+subdirs_src_L1Trigger_L1TMuonOverlapPhase2 := src_L1Trigger_L1TMuonOverlapPhase2_python src_L1Trigger_L1TMuonOverlapPhase2_plugins src_L1Trigger_L1TMuonOverlapPhase2_test src_L1Trigger_L1TMuonOverlapPhase2_src

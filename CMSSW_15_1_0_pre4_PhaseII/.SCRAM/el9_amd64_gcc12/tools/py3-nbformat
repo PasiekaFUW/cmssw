@@ -1,0 +1,14 @@
+{
+  "PY3_NBFORMAT_BASE": "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-nbformat/5.10.4-a600031142dc091e0fa702ba64d6cc9d",
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/py3-nbformat/5.10.4-a600031142dc091e0fa702ba64d6cc9d/bin"
+    ]
+  },
+  "TOOLNAME": "py3-nbformat",
+  "TOOLREVISION": "1",
+  "TOOLVERSION": "5.10.4-a600031142dc091e0fa702ba64d6cc9d",
+  "VARIABLES": [
+    "PY3_NBFORMAT_BASE"
+  ]
+}

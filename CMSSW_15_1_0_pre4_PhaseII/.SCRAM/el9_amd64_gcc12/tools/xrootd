@@ -1,0 +1,34 @@
+{
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/xrootd/5.7.2-becfec48bc00def6f34fa37c8056a0a8/include/xrootd",
+    "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/xrootd/5.7.2-becfec48bc00def6f34fa37c8056a0a8/include/xrootd/private"
+  ],
+  "LIB": [
+    "XrdUtils",
+    "XrdCl"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/xrootd/5.7.2-becfec48bc00def6f34fa37c8056a0a8/lib64"
+  ],
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/xrootd/5.7.2-becfec48bc00def6f34fa37c8056a0a8/bin"
+    ],
+    "PATH:ROOT_INCLUDE_PATH": [
+      "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/xrootd/5.7.2-becfec48bc00def6f34fa37c8056a0a8/include/xrootd/private"
+    ]
+  },
+  "TOOLNAME": "xrootd",
+  "TOOLREVISION": "2",
+  "TOOLVERSION": "5.7.2-becfec48bc00def6f34fa37c8056a0a8",
+  "USE": [
+    "root_cxxdefaults",
+    "isal"
+  ],
+  "VARIABLES": [
+    "XROOTD_BASE",
+    "INCLUDE",
+    "LIBDIR"
+  ],
+  "XROOTD_BASE": "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/xrootd/5.7.2-becfec48bc00def6f34fa37c8056a0a8"
+}

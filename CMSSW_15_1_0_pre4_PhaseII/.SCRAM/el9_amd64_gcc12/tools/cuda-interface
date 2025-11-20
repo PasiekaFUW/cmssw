@@ -1,0 +1,37 @@
+{
+  "BINDIR": [
+    "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/cuda/12.9.0-fa6c0b245a8855bd8804304f69e78056/bin"
+  ],
+  "CUDA_INTERFACE_BASE": "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/cuda/12.9.0-fa6c0b245a8855bd8804304f69e78056",
+  "FLAGS": {
+    "SKIP_TOOL_SYMLINKS": [
+      "1"
+    ]
+  },
+  "INCLUDE": [
+    "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/cuda/12.9.0-fa6c0b245a8855bd8804304f69e78056/include"
+  ],
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/cuda/12.9.0-fa6c0b245a8855bd8804304f69e78056/lib64"
+  ],
+  "RUNTIME": {
+    "PATH:LD_LIBRARY_PATH": [
+      "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/cuda/12.9.0-fa6c0b245a8855bd8804304f69e78056/lib64"
+    ],
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/cuda/12.9.0-fa6c0b245a8855bd8804304f69e78056/bin"
+    ],
+    "PATH:ROOT_INCLUDE_PATH": [
+      "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/cuda/12.9.0-fa6c0b245a8855bd8804304f69e78056/include"
+    ]
+  },
+  "TOOLNAME": "cuda-interface",
+  "TOOLREVISION": "1",
+  "TOOLVERSION": "12.9.0-fa6c0b245a8855bd8804304f69e78056",
+  "VARIABLES": [
+    "CUDA_INTERFACE_BASE",
+    "BINDIR",
+    "LIBDIR",
+    "INCLUDE"
+  ]
+}

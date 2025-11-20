@@ -1,0 +1,18 @@
+{
+  "HEAPTRACK_BASE": "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/heaptrack/1.4.0-080771c38ac0aeb4cc6c8f5d85872aba",
+  "LIBDIR": [
+    "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/heaptrack/1.4.0-080771c38ac0aeb4cc6c8f5d85872aba/lib"
+  ],
+  "RUNTIME": {
+    "PATH:PATH": [
+      "/cvmfs/cms.cern.ch/el9_amd64_gcc12/external/heaptrack/1.4.0-080771c38ac0aeb4cc6c8f5d85872aba/bin"
+    ]
+  },
+  "TOOLNAME": "heaptrack",
+  "TOOLREVISION": "1",
+  "TOOLVERSION": "1.4.0-080771c38ac0aeb4cc6c8f5d85872aba",
+  "VARIABLES": [
+    "HEAPTRACK_BASE",
+    "LIBDIR"
+  ]
+}

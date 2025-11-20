@@ -1,0 +1,32 @@
+{
+  "FLAGS": {
+    "GENREFLEX_CPPFLAGS": [
+      "-DCMS_DICT_IMPL",
+      "-D_REENTRANT",
+      "-DGNUSOURCE",
+      "-D__STRICT_ANSI__"
+    ],
+    "GENREFLEX_GCCXMLOPT": [
+      "-m64"
+    ],
+    "OVERRIDABLE_FLAGS": [
+      "GENREFLEX_CPPFLAGS"
+    ]
+  },
+  "ROOTRFLX_BASE": "/cvmfs/cms.cern.ch/el9_amd64_gcc12/lcg/root/6.32.13-42c70d2d1e9c3e3060272fb12c5546fb",
+  "RUNTIME": {
+    "GENREFLEX": [
+      "/cvmfs/cms.cern.ch/el9_amd64_gcc12/lcg/root/6.32.13-42c70d2d1e9c3e3060272fb12c5546fb/bin/rootcling"
+    ]
+  },
+  "TOOLNAME": "rootrflx",
+  "TOOLREVISION": "1",
+  "TOOLVERSION": "6.32.13-42c70d2d1e9c3e3060272fb12c5546fb",
+  "USE": [
+    "root_interface",
+    "rootcling"
+  ],
+  "VARIABLES": [
+    "ROOTRFLX_BASE"
+  ]
+}
