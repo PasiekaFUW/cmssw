@@ -27,12 +27,12 @@ process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 process.load("TrackingTools.RecoGeometry.RecoGeometries_cff")
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(100),
+    input = cms.untracked.int32(10000),
     output = cms.optional.untracked.allowed(cms.int32,cms.PSet)
 )
 
 # Input source
-prefixPath = '/home/akalinow/scratch_cmsse/CMS/Data/SingleMu/14_2_1_21_03_2025/'
+prefixPath = '/scratch_cmsse/akalinow/CMS/Data/SingleMu/14_2_1_21_03_2025/'
 #prefixPath = '/home/akalinow/scratch/CMS/OMTF/Production/PrivateMCProduction/'
 
 process.source = cms.Source("PoolSource",
@@ -147,11 +147,12 @@ prefix = "/home/akalinow/scratch/CMS/OMTF/PhaseII/omtf_nn_py/omtf_nn/training/"
 model_tag = '2025_Feb_27_16_05_19_classic_512_256_128_1'
 process.simOmtfPhase2DigisNN=process.simOmtfPhase2Digis.clone() 
 process.simOmtfPhase2DigisNN.tf_neuralNetworkFile = cms.string(prefix + model_tag)
-process.omtfPath = cms.Path(process.esProd*process.simOmtfPhase2Digis*process.simOmtfPhase2DigisNN)
+# process.omtfPath = cms.Path(process.esProd*process.simOmtfPhase2Digis*process.simOmtfPhase2DigisNN)
+process.omtfPath = cms.Path(process.esProd*process.simOmtfPhase2Digis)
+
 ############################################
 ####OMTF Analyzer
 process.load('omtfTree_cfi')
-process.muAnalyzerPath = cms.Path(process.omtfTree)
 #############################################
 # Path and EndPath definitions
 process.endjob_step = cms.EndPath(process.endOfProcess)
@@ -161,30 +162,10 @@ process.SimTrackFilter = cms.EDFilter("SimTrackFilter",
                                 minNumber = cms.uint32(1),
                                 src = cms.InputTag("g4SimHits"),
                                 cut = cms.string("abs(type)==13 && abs(momentum.pt)>10 && abs(momentum.eta)<1") 
+                                # cut = cms.string("abs(type)==13")
                                 )
-process.GenMuFilterPath = cms.Path(process.SimTrackFilter) #+ process.L1HighLevelFilterSequence) ##added GJ
-
-# GJ Attempt at creating L1 Filter
-# process.L1Type15Filter = cms.EDFilter(
-#     "L1TObjectFilterByCollectionAndType", 
-#     minNumber = cms.int32(1),                      
-#     src = cms.InputTag("l1tEmuL1TObjects"), 
-#     collectionType = cms.string(""),         
-#     type = cms.int32(15) #TK Muons                      
-# )
-# process.L1Type16Veto = cms.EDFilter(
-#     "L1TObjectFilterByCollectionAndType",
-#     minN = cms.int32(0),                      
-#     maxN = cms.int32(0), #Delete SAM from the sample    
-#     src = cms.InputTag("l1tEmuL1TObjects"), 
-#     collectionType = cms.string(""),
-#     type = cms.int32(16) #SA Muons
-# )
-# process.L1HighLevelFilterSequence = cms.Sequence(
-#     process.L1Type15Filter + 
-#     process.L1Type16Veto
-# )
-
+process.GenMuFilterPath = cms.Path(process.SimTrackFilter)
+process.muAnalyzerPath = cms.Path(process.SimTrackFilter*process.omtfTree)
 
 # Schedule definition
 process.schedule = cms.Schedule(process.GenMuFilterPath,process.DTPhase2DigisPath,process.omtfPath,process.GMTPhase2Path,process.muAnalyzerPath,process.endjob_step)

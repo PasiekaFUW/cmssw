@@ -27,12 +27,12 @@ process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 process.load("TrackingTools.RecoGeometry.RecoGeometries_cff")
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(100),
+    input = cms.untracked.int32(10000),
     output = cms.optional.untracked.allowed(cms.int32,cms.PSet)
 )
 
 # Input source
-prefixPath = '/scratch_cmsse/akalinow/CMS/Data/SingleMu/14_2_1_21_03_2025/'
+prefixPath = '/home/akalinow/scratch_cmsse/CMS/Data/SingleMu/14_2_1_21_03_2025/'
 #prefixPath = '/home/akalinow/scratch/CMS/OMTF/Production/PrivateMCProduction/'
 
 process.source = cms.Source("PoolSource",
@@ -147,13 +147,15 @@ prefix = "/home/akalinow/scratch/CMS/OMTF/PhaseII/omtf_nn_py/omtf_nn/training/"
 model_tag = '2025_Feb_27_16_05_19_classic_512_256_128_1'
 process.simOmtfPhase2DigisNN=process.simOmtfPhase2Digis.clone() 
 process.simOmtfPhase2DigisNN.tf_neuralNetworkFile = cms.string(prefix + model_tag)
-# process.omtfPath = cms.Path(process.esProd*process.simOmtfPhase2Digis*process.simOmtfPhase2DigisNN)
-process.omtfPath = cms.Path(process.esProd*process.simOmtfPhase2Digis)
-
+process.omtfPath = cms.Path(process.esProd*process.simOmtfPhase2Digis*process.simOmtfPhase2DigisNN)
 ############################################
 ####OMTF Analyzer
 process.load('omtfTree_cfi')
-process.muAnalyzerPath = cms.Path(process.omtfTree)
+
+# Run the SimTrackFilter before the omtf tree analyzer so only selected gen-muon events produce analyzer output.
+# process.muAnalyzerPath = cms.Path(process.omtfTree)
+process.muAnalyzerPath = cms.Path(process.SimTrackFilter*process.omtfTree)
+
 #############################################
 # Path and EndPath definitions
 process.endjob_step = cms.EndPath(process.endOfProcess)
@@ -162,12 +164,16 @@ process.endjob_step = cms.EndPath(process.endOfProcess)
 process.SimTrackFilter = cms.EDFilter("SimTrackFilter",
                                 minNumber = cms.uint32(1),
                                 src = cms.InputTag("g4SimHits"),
-                                cut = cms.string("abs(type)==13 && abs(momentum.pt)>10 && abs(momentum.eta)<1") 
+                                # cut = cms.string("abs(type)==13 && abs(momentum.pt)>10 && abs(momentum.eta)<1") 
+                                cut = cms.string("abs(type)==13 && abs(momentum.pt)>0") 
                                 )
 process.GenMuFilterPath = cms.Path(process.SimTrackFilter)
 
+
+
+
 # Schedule definition
-process.schedule = cms.Schedule(process.GenMuFilterPath,process.DTPhase2DigisPath,process.omtfPath,process.GMTPhase2Path,process.muAnalyzerPath,process.endjob_step)
+process.schedule = cms.Schedule(process.DTPhase2DigisPath,process.omtfPath,process.GMTPhase2Path,process.muAnalyzerPath,process.endjob_step)
 
 #Setup FWK for multithreaded
 process.options.numberOfThreads = 1
